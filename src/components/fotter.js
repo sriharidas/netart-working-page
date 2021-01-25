@@ -66,7 +66,7 @@ const Footer = ()=>{
                   <FaInstagram sx={symbol}/>
             </Flex>   
             <Flex sx={{width:'10%', }}>
-            <hr sx={{display:['none','none','block','block'],height:'0.5px',backgroundColor:'white',width:'70%',marginRight:'0px'}}></hr><span sx={{display:['none','none','block','block']}}>2021</span>
+            <hr sx={{display:['none','none','none','block'],height:'0.5px',backgroundColor:'white',width:'70%',marginRight:'0px'}}></hr><span sx={{display:['none','none','block','block']}}>2021</span>
             </Flex>   
            </Flex>
         </footer>
