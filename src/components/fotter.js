@@ -4,9 +4,7 @@ import {  jsx } from "theme-ui"
 import React from 'react'
 import { Flex } from 'theme-ui'
 import { FaFacebookF,FaTwitter,FaLinkedin,FaInstagram} from "react-icons/fa"
-// import { FaTwitter } from "@react-icons/all-files/fa/FaTwitter"
-// import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin"
-// import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram"
+
  
 
 
@@ -14,7 +12,6 @@ const footer={
     position:'relative',
     bottom:'0%',
     zIndex:'1',
-    fontFamily:'Fira Sans',
     justifyContent:[null,null,'space-around','space-around'], 
     alignItems:'center',
     backgroundColor:"#222222",
@@ -59,23 +56,20 @@ const Footer = ()=>{
            <Flex sx={footer}>
                <Flex sx={{justifyContent:'space-between',}}> <h5>DESIGNED AND DEVELOPED BY &nbsp; &nbsp; <span sx={{color: '#CB0F22',fontSize:'15px'}}>NET</span> <span sx={{color:'#006BAD',fontSize:'15px'}}>ART</span></h5></Flex>
             <Flex sx={{justifyContent:'space-between', alignItems:'center',width:'50%'}}> 
+                  
                { link_content.map(({url,tittle}) =>(
                   <h5><a sx={link} href={url} target="_blank">{tittle}</a></h5> 
                ))}
-               
                   <FaFacebookF sx={symbol}/>
                   <FaTwitter sx={symbol}/>
                   <FaLinkedin sx={symbol}/>
                   <FaInstagram sx={symbol}/>
-                  </Flex>
-               
+            </Flex>   
             <Flex sx={{width:'10%', }}>
             <hr sx={{display:['none','none','block','block'],height:'0.5px',backgroundColor:'white',width:'70%',marginRight:'0px'}}></hr><span sx={{display:['none','none','block','block']}}>2021</span>
-            </Flex>
-                      
+            </Flex>   
            </Flex>
         </footer>
-        
     )
 }
 export default Footer
