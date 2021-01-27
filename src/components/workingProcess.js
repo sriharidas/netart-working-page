@@ -1,7 +1,8 @@
 import React from 'react'
 /** @jsx jsx */
 import {jsx, Styled} from 'theme-ui'
-import '../../gatsby-plugin-theme-ui/index'
+import '../gatsby-plugin-theme-ui/index'
+
 import { Flex} from 'theme-ui'
 
 
@@ -35,8 +36,8 @@ const wp_layout = {
 }
 
 const wp_grid = {
-    width: ['100%','100%','50%','25%','25%'],
-    height: '500px',
+    width: ['100%','100%','50%','33%','25%'],
+    height: '400px',
     backgroundColor: '#333',
     flexDirection: 'column',
     border: '1px solid #fff',
@@ -116,3 +117,30 @@ const WorkingProcess = () => (
 )
     
 export default WorkingProcess
+
+/*
+ <Flex sx={wp_layout}>
+            <Flex sx={wp_grid}>
+                <p sx={wp_grid_element_1}>01.</p>
+                <p sx={wp_grid_element_2}>Market Research</p>
+                <p sx={wp_grid_element_3}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </Flex>
+            <Flex sx={wp_grid}>
+                <p sx={wp_grid_element_1}>02.</p>
+                <p sx={wp_grid_element_2}>Market Research</p>
+                <p sx={wp_grid_element_3}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
+
+            </Flex>
+            <Flex sx={wp_grid}>
+                <p sx={wp_grid_element_1}>03.</p>
+                <p sx={wp_grid_element_2}>Market Research</p>
+                <p sx={wp_grid_element_3}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </Flex>
+            <Flex sx={wp_grid}>
+                <p sx={wp_grid_element_1}>04. </p>
+                <p sx={wp_grid_element_2}>Market Research</p>
+                <p sx={wp_grid_element_3}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </Flex>
+
+        </Flex>
+ */

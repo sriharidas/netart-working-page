@@ -17,8 +17,8 @@ const footer={
     backgroundColor:"#222222",
     color:'white',
      height:['25vh','25vh','15vh','15vh'],
-     flexDirection:['column','column','row','row']
-     
+     flexDirection:['column','column','row','row'],
+     marginLeft: 0
 }
 const link={
     textDecoration:'none',
@@ -54,7 +54,7 @@ const Footer = ()=>{
     return(
         <footer>
            <Flex sx={footer}>
-               <Flex sx={{justifyContent:'space-between',}}> <h5>DESIGNED AND DEVELOPED BY &nbsp; &nbsp; <span sx={{color: '#CB0F22',fontSize:'15px'}}>NET</span> <span sx={{color:'#006BAD',fontSize:'15px'}}>ART</span></h5></Flex>
+               <Flex sx={{justifyContent:'space-between',}}> <h5>DESIGNED AND DEVELOPED BY &nbsp; &nbsp;  <span sx={{color: '#CB0F22',fontSize:'15px'}}>NET</span> <span sx={{color:'#006BAD',fontSize:'15px'}}>ART</span></h5></Flex>
             <Flex sx={{justifyContent:'space-between', alignItems:'center',width:'50%'}}> 
                   
                { link_content.map(({url,tittle}) =>(
