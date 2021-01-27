@@ -36,7 +36,7 @@ const wp_layout = {
 
 const wp_grid = {
     width: ['100%','100%','50%','25%','25%'],
-    height: '500px',
+    height: '400px',
     backgroundColor: '#333',
     flexDirection: 'column',
     border: '1px solid #fff',
@@ -85,7 +85,7 @@ const workingData = [
     heading: 'Development'
  }
  ]
-const WorkingProcess = () => (
+const WorkingProcess = (workingData) => (
    
         <div sx={wp_container}>
         <Flex sx={wp_header}>
@@ -95,15 +95,24 @@ const WorkingProcess = () => (
         <Flex sx={wp_layout}>
             
             {
-                workingData.map(data => {
-                    //console.log(data['id'],data['heading'])
-                
+                //
+                workingData['data'].map((data)=>{
+                    console.log(data['id'],data['heading'])
                     return (<Flex sx={wp_grid} >
-                    <p sx={wp_grid_element_1} >{data['id']}</p>
-                    <p sx={wp_grid_element_2}>{data['heading']}</p>
-                    <p sx={wp_grid_element_3} >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </Flex>)
+                        <p sx={wp_grid_element_1} >{data['id']}</p>
+                        <p sx={wp_grid_element_2}>{data['heading']}</p>
+                        <p sx={wp_grid_element_3} >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </Flex>)
                 })
+               // workingData.map(data => {
+                    //console.log(data)
+                
+                    //return (<Flex sx={wp_grid} >
+                    //<p sx={wp_grid_element_1} >{data['id']}</p>
+                   // <p sx={wp_grid_element_2}>{data['heading']}</p>
+                    //<p sx={wp_grid_element_3} >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                //</Flex>)
+                //})
             }
             
             
